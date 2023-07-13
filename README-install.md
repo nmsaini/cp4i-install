@@ -34,10 +34,17 @@ oc -n openshift-marketplace get catalogsources
 ```
 
 ## Step 3. Create a subsciption for your operators
+if doing namespaced scope
 ```
+export NS=cp4i-dev
 ./gen-subscription-plan.sh subscription-channels.txt
 ```
-This creats the sub in the current project namespace so be careful you are in the correct namespace context
+
+if doing global make 
+```
+export NS=openshift-operators
+./gen-subscription-plan.sh subscription-channels.txt
+```
 
 ## Step 4. create a pull secret
 create your pull secret either in the global pull-secret or in the namespace
