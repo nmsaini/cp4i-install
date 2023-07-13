@@ -1,0 +1,9 @@
+ibm-integration-platform-navigator 	1.7.11
+ibm-integration-asset-repository 	1.5.10
+ibm-integration-operations-dashboard 	2.6.12
+ibm-apiconnect 	4.0.4
+ibm-appconnect 	5.0.8
+ibm-mq 	2.0.12
+ibm-eventstreams 	3.2.1
+ibm-datapower-operator 	1.6.8
+ibm-aspera-hsts-operator 	1.5.9
