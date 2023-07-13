@@ -34,6 +34,8 @@ oc -n openshift-marketplace get catalogsources
 ```
 oc -n openshift-marketplace delete catalogsource ibm-operator-catalog
 ```
+when this is done, a bunch of your current subscriptions will become unhealthy as the source of their subscritions are now gone. 
+In the next steps you will need to patch your environment and repoint those subscriptions to the new catalogsource.
 
 ## Step 4. Delete the running ibm-common-service-operator pods from all namespaces
 ```
