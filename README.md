@@ -1,4 +1,4 @@
-# cp4i-install
+# cp4i-operator-install
 
 ## - [Migrating off a global catalog](./README-migrating.md)
 
