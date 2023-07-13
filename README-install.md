@@ -35,7 +35,7 @@ oc -n openshift-marketplace get catalogsources
 
 ## Step 3. Create a subsciption for your operators
 ```
-./gen-subscription-plan.sh subscription-plan.txt
+./gen-subscription-plan.sh subscription-channels.txt
 ```
 This creats the sub in the current project namespace so be careful you are in the correct namespace context
 
