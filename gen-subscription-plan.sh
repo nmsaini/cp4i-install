@@ -22,6 +22,18 @@ then
    exit -1
 fi
 
+# before you proceed for individual namespace we need an operatorgroup
+echo "
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: ibm-integration-operatorgroup
+  namespace: $NS
+spec:
+  targetNamespaces:
+  - $NS
+" | oc apply -f -
+
 echo " -------------- get operator, catalog, channel ---------------"
 # get the operator, catalog, and channel
 while read -r sub catalog channel
@@ -37,6 +49,7 @@ metadata:
   namespace: $NS
 spec:
   channel: $channel
+  installPlanApproval: Automatic
   name: $sub
   source: $catalog
   sourceNamespace: openshift-marketplace
