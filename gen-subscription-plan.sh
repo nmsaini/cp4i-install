@@ -23,6 +23,8 @@ then
 fi
 
 # before you proceed for individual namespace we need an operatorgroup
+if [ "$NS" != "openshift-operators" ]; then
+echo " --------- generating an operator group ----------- "
 echo "
 apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
@@ -33,6 +35,7 @@ spec:
   targetNamespaces:
   - $NS
 " | oc apply -f -
+fi
 
 echo " -------------- get operator, catalog, channel ---------------"
 # get the operator, catalog, and channel
