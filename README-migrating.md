@@ -8,6 +8,9 @@ Refer to [2022.2.1 docs](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2
 ```
 
 ## Step 2. Generate your operator manifest files
+The catalog text file contains the operator versions valid for 2022.2 LTS release as of today.
+If you want a different release please make sure your catalog.txt file is updated with your versions!
+If there are newer versions that are valid for the current 2022.2 LTS then please update the versions in this file before running the command.
 ```
 ./gen-operator-catalog.sh catalog.2022.2.txt
 ```
