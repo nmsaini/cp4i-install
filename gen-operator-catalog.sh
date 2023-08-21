@@ -18,20 +18,20 @@ fi
 
 echo " -------------- get operator versions ---------------"
 # get the desired operator
-while read -r case version
+cat ${CATFILE} | grep -v "^#" | while read -r case version
 do
   echo "oc ibm-pak get $case --version $version"
   oc ibm-pak get $case --version $version
-done < ${CATFILE}
+done 
 
 echo
 echo " -------------- generate manifests file ---------------"
 # generate the catalog sources
-while read -r case version
+cat ${CATFILE} | grep -v "^#" | while read -r case version
 do
   echo "oc ibm-pak generate mirror-manifests $case icr.io --version $version"
   oc ibm-pak generate mirror-manifests $case icr.io --version $version
-done < ${CATFILE}
+done 
 
 # you need to apply both catalog-sources.yaml + catalog-sources-${ARCH}.yaml
 #
