@@ -14,26 +14,22 @@ Refer to [2022.2.1 docs](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2
 At the end of the script execution it will show you a list of sources to apply to your environment.
 You will need to copy and paste that text into a shell to execute. 🛑 DO NOT COPY this output. This is just a sample. You need to copy from your own execution output!
 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-integration-platform-navigator/1.7.11/catalog-sources.yaml
->
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-integration-asset-repository/1.5.10/catalog-sources-linux-amd64.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-integration-operations-dashboard/2.6.12/catalog-sources-linux-amd64.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-apiconnect/4.0.4/catalog-sources.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-apiconnect/4.0.4/catalog-sources-linux-amd64.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-appconnect/5.0.8/catalog-sources.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-mq/2.0.12/catalog-sources.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-eventstreams/3.2.1/catalog-sources.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-datapower-operator/1.6.8/catalog-sources-linux-amd64.yaml
-> 
-> oc apply -f /root/.ibm-pak/data/mirror/ibm-aspera-hsts-operator/1.5.9/catalog-sources.yaml
-
+```
+******************************************************************
+********** apply the following operator manifests ****************
+******************************************************************
+oc apply -f /root/.ibm-pak/data/mirror/ibm-integration-platform-navigator/1.7.11/catalog-sources.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-integration-asset-repository/1.5.10/catalog-sources-linux-amd64.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-integration-operations-dashboard/2.6.12/catalog-sources-linux-amd64.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-apiconnect/4.0.4/catalog-sources.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-apiconnect/4.0.4/catalog-sources-linux-amd64.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-appconnect/5.0.8/catalog-sources.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-mq/2.0.12/catalog-sources.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-eventstreams/3.2.1/catalog-sources.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-datapower-operator/1.6.8/catalog-sources-linux-amd64.yaml
+oc apply -f /root/.ibm-pak/data/mirror/ibm-aspera-hsts-operator/1.5.9/catalog-sources.yaml
+******************************************************************
+```
 now validate the new catalog sources.
 ```
 oc -n openshift-marketplace get catalogsources
