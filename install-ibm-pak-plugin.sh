@@ -2,6 +2,10 @@
 
 # more info https://github.com/IBM/ibm-pak#download-and-verify-software 
 #
+# skopeo list-tags docker://cp.icr.io/cpopen/cpfs/ibm-pak
+#
+PAK_VERSION=v1.9.0
+#
 # check podman or docker installed
 if ! ((command -v podman >/dev/null) || (command -v docker >/dev/null))
 then
@@ -27,14 +31,14 @@ fi
 # 1 of them is installed check podman
 if (command -v podman >/dev/null)
 then
-	id=$(podman create cp.icr.io/cpopen/cpfs/ibm-pak:v1.8.0 - )
+	id=$(podman create cp.icr.io/cpopen/cpfs/ibm-pak:$PAK_VERSION - )
 	podman cp $id:/ibm-pak-plugin plugin-dir
 	podman rm -v $id
 	cd plugin-dir
 	tar -xvf oc-ibm_pak-linux-amd64.tar.gz
 	cp oc-ibm_pak-linux-amd64 /usr/local/bin/oc-ibm_pak
 else
-	id=$(docker create cp.icr.io/cpopen/cpfs/ibm-pak:v1.8.0 - )
+	id=$(docker create cp.icr.io/cpopen/cpfs/ibm-pak:$PAK_VERSION - )
 	docker cp $id:/ibm-pak-plugin plugin-dir
 	docker rm -v $id
 	cd plugin-dir
