@@ -61,5 +61,12 @@ oc create secret docker-registry ibm-entitlement-key \
     --namespace=$NS
 ```
 
+For global pull-secret, you need to extract the current config and then update the dockerconfigjson as 
+```
+oc extract secret/pull-secret -n openshift-config --keys=.dockerconfigjson --to . --confirm
+oc registry login --registry=cp.icr.io --auth-basic="cp:$KEY" --to .dockerconfigjson
+oc set data secret/pull-secret -n openshift-config --from-file=.dockerconfigjson=.dockerconfigjson
+```
+
 ## Step 5. Validate before creating operands
 Validate your subscriptions are healthy
