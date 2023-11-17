@@ -1,13 +1,14 @@
 # see latest versions at
 # https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.2?topic=cluster-mirroring-images-bastion-host
+# https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.2?topic=images-adding-catalog-sources-cluster
 #
-ibm-integration-platform-navigator 	1.7.12
-ibm-integration-asset-repository 	1.5.11
-ibm-integration-operations-dashboard 	2.6.13
-ibm-apiconnect 	4.0.5
-ibm-appconnect 	5.0.9
-ibm-mq 	2.0.13
-ibm-eventstreams 	3.2.2
-ibm-datapower-operator 	1.6.8
-ibm-aspera-hsts-operator 	1.5.10
-ibm-cp-common-services	1.15.14
+ibm-integration-platform-navigator 	1.7.14
+ibm-integration-asset-repository 	1.5.14
+ibm-integration-operations-dashboard 	2.6.16
+ibm-apiconnect 	4.0.6
+ibm-appconnect 	5.0.12
+ibm-mq 	2.0.16
+ibm-eventstreams 	3.2.5
+ibm-datapower-operator 	1.6.11
+ibm-aspera-hsts-operator 	1.5.12
+ibm-cp-common-services	1.15.17
