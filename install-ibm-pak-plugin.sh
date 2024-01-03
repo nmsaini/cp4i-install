@@ -4,7 +4,7 @@
 #
 # skopeo list-tags docker://cp.icr.io/cpopen/cpfs/ibm-pak
 #
-PAK_VERSION=v1.9.0
+PAK_VERSION=v1.11.2
 #
 # check podman or docker installed
 if ! ((command -v podman >/dev/null) || (command -v docker >/dev/null))
