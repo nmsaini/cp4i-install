@@ -4,6 +4,6 @@ ibm-integration-platform-navigator	ibm-integration-platform-navigator-catalog	v6
 ibm-integration-asset-repository	ibm-integration-asset-repository-catalog	v1.5
 ibm-integration-operations-dashboard	ibm-integration-operations-dashboard-catalog	v2.6-lts
 ibm-apiconnect				ibm-apiconnect-catalog				v3.5
-ibm-eventstreams			ibm-eventstreams				v3.0
+ibm-eventstreams			ibm-eventstreams				v3.2
 aspera-hsts-operator			aspera-operators				v1.5
 
