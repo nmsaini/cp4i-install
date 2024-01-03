@@ -3,6 +3,7 @@
 ### Pre-requisite utilities needed
     - Docker or Podman
     - jq
+    - yq
 ### Follow steps in either migrating or fresh install.
 
 
