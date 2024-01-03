@@ -1,5 +1,8 @@
 # cp4i-operator-install
 
+### Pre-requisite utilities needed
+    - Docker or Podman
+    - jq
 ### Follow steps in either migrating or fresh install.
 
 
