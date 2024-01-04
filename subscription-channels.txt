@@ -6,4 +6,4 @@ ibm-integration-operations-dashboard	ibm-integration-operations-dashboard-catalo
 ibm-apiconnect				ibm-apiconnect-catalog				v3.5
 ibm-eventstreams			ibm-eventstreams				v3.2
 aspera-hsts-operator			aspera-operators				v1.5
-
+datapower-operator                      ibm-datapower-operator-catalog                  v1.6
