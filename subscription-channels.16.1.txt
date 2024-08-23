@@ -3,6 +3,7 @@ ibm-integration-asset-repository        ibm-integration-asset-repository-catalog
 ibm-apiconnect                          ibm-apiconnect-catalog                          v5.2-sc2
 ibm-appconnect                          appconnect-operator-catalogsource               v12.0-sc2
 ibm-eventstreams                        ibm-eventstreams                                v3.4
+ibm-eventpointmanagement                ibm-eventendpointmanagement-catalog             v11.2
 ibm-mq                                  ibmmq-operator-catalogsource                    v3.2-sc2
 ibm-datapower-operator                  ibm-datapower-operator-catalog                  v1.11-sc2
 ibm-aspera                              aspera-operators                                v1.5
