@@ -14,3 +14,4 @@ ibm-aspera-hsts-operator                1.5.13
 ibm-cp-common-services                  4.6.5
 ibm-cloud-native-postgresql             5.0.0
 ibm-cert-manager                        4.2
+ibm-licensing                           4.2
