@@ -1,5 +1,8 @@
 #!/bin/bash
-
+# you can get the case name from https://github.com/IBM/cloud-pak/tree/master/repo/case
+# if don't give the version it will get the latest catalog version on the get
+# however version is required for generate mirror-manifests command
+#
 export ARCH=amd64
 CATFILE=catalog.2022.2.txt
 
