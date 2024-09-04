@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: ibm-cert-manager-operator
+  namespace: ibm-cert-manager
+spec:
+  channel: v4.2
+  installPlanApproval: Automatic
+  name: ibm-cert-manager-operator
+  source: ibm-cert-manager-catalog
+  sourceNamespace: openshift-marketplace
