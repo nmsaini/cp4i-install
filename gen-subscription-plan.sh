@@ -39,7 +39,7 @@ fi
 
 echo " -------------- get operator, catalog, channel ---------------"
 # get the operator, catalog, and channel
-while read -r sub catalog channel
+cat ${SUBFILE} | grep -v "^#" | while read -r sub catalog channel
 do
   if [ -z $channel ]; then
 	continue;
@@ -57,5 +57,5 @@ spec:
   source: $catalog
   sourceNamespace: openshift-marketplace
 " | oc apply -f -
-done < ${SUBFILE}
+done
 
