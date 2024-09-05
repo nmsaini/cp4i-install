@@ -1,0 +1,42 @@
+apiVersion: v1
+data:
+  configuration: eyJhdXRoVHlwZSI6IkJBU0lDX0FVVEgiLCJjcmVkZW50aWFscyI6eyJ1c2VybmFtZSI6IiIsInBhc3N3b3JkIjoiIn19Cg==
+kind: Secret
+metadata:
+  name: github-ivt-secret
+---
+apiVersion: appconnect.ibm.com/v1beta1
+kind: Configuration
+metadata:
+  name: github-ivt
+spec:
+  secretName: github-ivt-secret
+  type: barauth
+---
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationRuntime
+metadata:
+  name: ivt104-ir
+  namespace: cp4i
+spec:
+  license:
+    accept: true
+    license: L-XRNH-47FJAW
+    use: CloudPakForIntegrationNonProductionFREE
+  template:
+    spec:
+      containers:
+        - resources:
+            requests:
+              cpu: 300m
+              memory: 368Mi
+          name: runtime
+  logFormat: basic
+  barURL:
+    - 'https://github.com/nmsaini/tekton-pipeline-test/raw/main/deploy/IVT.104.bar'
+  configurations:
+    - github-ivt
+  defaultNetworkPolicy:
+    enabled: true
+  replicas: 1
+  version: '12.0'
