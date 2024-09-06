@@ -1,3 +1,4 @@
+# comment using # if any of these are not needed
 ibm-integration-platform-navigator      ibm-integration-platform-navigator-catalog      v7.3-sc2
 ibm-integration-asset-repository        ibm-integration-asset-repository-catalog        v1.7-sc2
 ibm-apiconnect                          ibm-apiconnect-catalog                          v5.2-sc2
