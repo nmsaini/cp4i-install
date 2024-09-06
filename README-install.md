@@ -9,7 +9,7 @@ Refer to [2022.2.1 docs](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2
 
 ## Step 2. Generate your operator manifest files
 The catalog text file contains the operator versions valid for 16.1 LTS release as of today. If you want a different release please make sure your catalog.txt file is updated with your versions! 
-If there are newer versions that are valid for the current 2022.2 LTS then please update the versions in this file before running the command.
+If there are newer versions that are valid for the current 16.1 LTS then please update the versions in this file before running the command.
 ```
 ./gen-operator-catalog.sh catalog.16.1.txt
 ```
@@ -40,7 +40,7 @@ oc -n openshift-marketplace get catalogsources
 if doing namespaced scope
 ```
 export NS=cp4i-dev
-./gen-subscription-plan.sh subscription-channels.txt
+./gen-subscription-plan.sh subscription-channels.16.1.txt
 ```
 
 if doing global make 
@@ -49,7 +49,7 @@ export NS=openshift-operators
 ./gen-subscription-plan.sh subscription-channels.16.1.txt
 ```
 ❗Subscription channel text file contains the versions of the channels available for a release.
-This file currently contains versions for the 2022.2 LTS release. If you need a different release either update this file with those versions or create a new file and use that file instead in the command above.
+This file currently contains versions for the 16.1 LTS release. If you need a different release either update this file with those versions or create a new file and use that file instead in the command above.
 
 ## Step 4. create a pull secret
 create your pull secret either in the global pull-secret or in the namespace
