@@ -1,6 +1,6 @@
 # cp4i fresh install
 
-Refer to [2022.2.1 docs](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.2?topic=images-adding-catalog-sources-cluster)
+Refer to [16.1 LTS](https://www.ibm.com/docs/en/cloud-paks/cp-integration/16.1.0?topic=cluster-mirroring-images-bastion-host) docs
 
 ## Step 1. Install ibm-pak plugin to ocp
 ```
