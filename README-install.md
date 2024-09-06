@@ -52,6 +52,12 @@ export NS=openshift-operators
 This file currently contains versions for the 16.1 LTS release. If you need a different release either update this file with those versions or create a new file and use that file instead in the command above.
 
 ## Step 4. create a pull secret
+
+copy your pull secret or [entitlement-key](https://myibm.ibm.com/products-services/containerlibrary) into a KEY variable
+```
+KEY=SECRET-ENTITLEMENT-KEY
+```
+
 create your pull secret either in the global pull-secret or in the namespace
 ```
 oc create secret docker-registry ibm-entitlement-key \
