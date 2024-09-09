@@ -1,0 +1,63 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: nha1
+  labels:
+    QMNAME: NHA1
+    type: qmgr
+    avail: native
+spec:
+  license:
+    accept: true
+    license: L-CLXQ-ADXTK3 #L-RJON-CD3JKX
+    use: Development #NonProduction
+  queueManager:
+    name: NHA1
+    resources:
+      limits:
+        cpu: 1
+        memory: 1Gi
+      requests:
+        cpu: 500m
+        memory: 1Gi
+    storage:
+      queueManager:
+        type: persistent-claim
+      defaultClass: rook-ceph-block
+      defaultDeleteClaim: true         # NOT recommended for PROD
+    availability:
+      type: NativeHA
+      tls:
+        secretName: nha1-internal-tls
+      updateStrategy: RollingUpdate
+    mqsc:
+      - configMap:
+          name: nha1-mqsc-config
+          items:
+            - nha1.mqsc
+    ini:
+      - configMap:
+          name: nha1-ini-config
+          items:
+            - nha1.ini
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUTXXXX
+              value: 'yes'
+            - name: LC_ALL
+              value: 'C.utf8'
+          name: qmgr
+  version: 9.4.0.5-r1 #9.3.0.15-r1
+  web:
+    enabled: true
+  pki:
+    keys:
+      - name: nha1
+        secret:
+          secretName: nha1-tls
+          items:
+            - tls.key
+            - tls.crt
+            - ca.crt
