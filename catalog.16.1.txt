@@ -1,6 +1,7 @@
 # see for latest versions
 # https://www.ibm.com/docs/en/cloud-paks/cp-integration/16.1.0?topic=cluster-mirroring-images-bastion-host
 # https://www.ibm.com/docs/en/cloud-paks/cp-integration/16.1.0?topic=reference-operator-instance-versions-this-release
+# https://www.ibm.com/docs/en/cloud-paks/cp-integration/16.1.0?topic=images-adding-catalog-sources-cluster#export-commands
 #
 ibm-integration-platform-navigator      7.3.4
 ibm-integration-asset-repository        1.7.3
