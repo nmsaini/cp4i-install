@@ -9,8 +9,8 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-CLXQ-ADXTK3 #L-RJON-CD3JKX
-    use: Development #NonProduction
+    license: L-JTPV-KYG8TF
+    use: NonProduction
   queueManager:
     name: NHA1
     resources:
