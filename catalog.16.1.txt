@@ -6,7 +6,7 @@
 ibm-integration-platform-navigator      7.3.4
 ibm-integration-asset-repository        1.7.3
 ibm-apiconnect                          5.2.0
-ibm-appconnect                          12.0.3
+ibm-appconnect                          12.0.4
 ibm-mq                                  3.2.4
 ibm-eventstreams                        3.4.0
 ibm-eventendpointmanagement             11.2.3
