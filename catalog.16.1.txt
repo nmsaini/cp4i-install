@@ -3,16 +3,16 @@
 # https://www.ibm.com/docs/en/cloud-paks/cp-integration/16.1.0?topic=reference-operator-instance-versions-this-release
 # https://www.ibm.com/docs/en/cloud-paks/cp-integration/16.1.0?topic=images-adding-catalog-sources-cluster#export-commands
 #
-ibm-integration-platform-navigator      7.3.4
-ibm-integration-asset-repository        1.7.3
+ibm-integration-platform-navigator      7.3.5
+ibm-integration-asset-repository        1.7.4
 ibm-apiconnect                          5.2.0
 ibm-appconnect                          12.0.4
-ibm-mq                                  3.2.4
-ibm-eventstreams                        3.4.0
-ibm-eventendpointmanagement             11.2.3
+ibm-mq                                  3.2.5
+ibm-eventstreams                        3.5.0
+ibm-eventendpointmanagement             11.3.1
 ibm-datapower-operator                  1.11.2
 ibm-aspera-hsts-operator                1.5.13
-ibm-cp-common-services                  4.6.5
+ibm-cp-common-services                  4.6.6
 ibm-cloud-native-postgresql             5.0.0
 ibm-cert-manager                        4.2
 ibm-licensing                           4.2
