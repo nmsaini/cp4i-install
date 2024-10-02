@@ -31,6 +31,9 @@ spec:
               cpu: 300m
               memory: 368Mi
           name: runtime
+          env:
+            - name: TZ
+              value: "America/New_York"
   logFormat: basic
   barURL:
     - 'https://github.com/nmsaini/tekton-pipeline-test/raw/main/deploy/IVT.104.bar'
