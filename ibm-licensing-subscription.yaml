@@ -9,7 +9,10 @@ kind: OperatorGroup
 metadata:
   name: ibm-licensing-og
   namespace: ibm-licensing
-spec: {}
+spec: 
+  targetNamespaces:
+    - ibm-licensing
+  upgradeStrategy: Default
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
