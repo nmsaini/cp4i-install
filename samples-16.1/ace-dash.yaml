@@ -35,7 +35,7 @@ spec:
   storage:
     size: 5Gi
     type: persistent-claim
-    class: ocs-storagecluster-cephfs
+    class: rook-cephfs
   replicas: 1
   displayMode: IntegrationRuntimes
   version: '12.0'
