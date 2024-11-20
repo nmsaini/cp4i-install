@@ -6,6 +6,7 @@ ibm-appconnect                          appconnect-operator-catalogsource       
 ibm-eventstreams                        ibm-eventstreams                                v3.5
 ibm-eventendpointmanagement             ibm-eventendpointmanagement-catalog             v11.3
 ibm-eventprocessing                     ibm-eventprocessing-catalog                     v1.2
+ibm-eventautomation-flink               ibm-eventautomation-flink-catalog               v1.2
 ibm-mq                                  ibmmq-operator-catalogsource                    v3.2-sc2
 datapower-operator                      ibm-datapower-operator-catalog                  v1.11-sc2
 aspera-hsts-operator                    aspera-operators                                v1.5
