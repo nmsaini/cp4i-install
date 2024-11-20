@@ -12,6 +12,7 @@ ibm-mq                                  3.2.6
 ibm-eventstreams                        3.5.1
 ibm-eventendpointmanagement             11.3.2
 ibm-eventprocessing                     1.2.2
+ibm-eventautomation-flink               1.2.2
 ibm-datapower-operator                  1.11.3
 ibm-aspera-hsts-operator                1.5.13
 ibm-cp-common-services                  4.6.8
