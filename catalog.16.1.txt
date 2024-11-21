@@ -5,10 +5,10 @@
 # https://github.com/IBM/ibm-cert-manager-operator/releases
 # https://github.com/IBM/ibm-licensing-operator/releases
 #
-ibm-integration-platform-navigator      7.3.6
-ibm-integration-asset-repository        1.7.5
+ibm-integration-platform-navigator      7.3.7
+ibm-integration-asset-repository        1.7.6
 ibm-apiconnect                          5.3.0
-ibm-appconnect                          12.0.5
+ibm-appconnect                          12.0.6
 ibm-mq                                  3.2.6
 ibm-eventstreams                        3.5.1
 ibm-eventendpointmanagement             11.3.2
