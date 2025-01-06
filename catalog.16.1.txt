@@ -11,9 +11,9 @@ ibm-apiconnect                          5.3.0
 ibm-appconnect                          12.0.7
 ibm-mq                                  3.2.7
 ibm-eventstreams                        3.5.2
-ibm-eventendpointmanagement             11.4.0
-ibm-eventprocessing                     1.2.2
-ibm-eventautomation-flink               1.2.2
+ibm-eventendpointmanagement             11.4.1
+ibm-eventprocessing                     1.2.3
+ibm-eventautomation-flink               1.2.3
 ibm-datapower-operator                  1.11.4
 ibm-aspera-hsts-operator                1.5.13
 ibm-cp-common-services                  4.6.9
