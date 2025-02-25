@@ -5,18 +5,18 @@
 # https://github.com/IBM/ibm-cert-manager-operator/releases
 # https://github.com/IBM/ibm-licensing-operator/releases
 #
-ibm-integration-platform-navigator      7.3.8
-ibm-integration-asset-repository        1.7.7
+ibm-integration-platform-navigator      7.3.9
+ibm-integration-asset-repository        1.7.9
 ibm-apiconnect                          5.3.0
-ibm-appconnect                          12.0.7
-ibm-mq                                  3.2.7
-ibm-eventstreams                        3.5.2
+ibm-appconnect                          12.0.9
+ibm-mq                                  3.2.8
+ibm-eventstreams                        3.6.0
 ibm-eventendpointmanagement             11.4.1
-ibm-eventprocessing                     1.2.3
-ibm-eventautomation-flink               1.2.3
+ibm-eventprocessing                     1.2.4
+ibm-eventautomation-flink               1.2.4
 ibm-datapower-operator                  1.11.4
-ibm-aspera-hsts-operator                1.5.13
-ibm-cp-common-services                  4.6.9
+ibm-aspera-hsts-operator                1.5.16
+ibm-cp-common-services                  4.6.10
 ibm-cloud-native-postgresql             5.2.0
 ibm-cert-manager                        4.2
 ibm-licensing                           4.2
