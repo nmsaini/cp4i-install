@@ -4,6 +4,7 @@
 # https://www.ibm.com/docs/en/cloud-paks/cp-integration/16.1.0?topic=images-adding-catalog-sources-cluster#export-commands
 # https://github.com/IBM/ibm-cert-manager-operator/releases
 # https://github.com/IBM/ibm-licensing-operator/releases
+# https://github.com/IBM/cloud-pak/tree/master/repo/case
 #
 ibm-integration-platform-navigator      7.3.15
 ibm-integration-asset-repository        1.7.11
