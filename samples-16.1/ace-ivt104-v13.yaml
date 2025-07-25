@@ -1,0 +1,29 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationRuntime
+metadata:
+  name: ir-01-quickstart
+  labels:
+    backup.appconnect.ibm.com/component: integrationruntime
+  namespace: cp4i
+spec:
+  license:
+    accept: true
+    license: L-KPRV-AUG9NC
+    use: CloudPakForIntegrationNonProductionFREE
+  template:
+    spec:
+      containers:
+        - resources:
+            requests:
+              cpu: 300m
+              memory: 368Mi
+          name: runtime
+  logFormat: basic
+  barURL:
+    - 'https://github.com/nmsaini/tekton-pipeline-test/raw/main/deploy/IVT.104.bar'
+  configurations:
+    - github-ivt
+  defaultNetworkPolicy:
+    enabled: true
+  replicas: 1
+  version: '13.0'
