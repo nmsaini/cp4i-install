@@ -1,9 +1,9 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: nha
+  name: nha-qmgr
   labels:
-    QMNAME: NHA
+    QMNAME: NHA1
     type: qmgr
     avail: native
 spec:
@@ -12,7 +12,7 @@ spec:
     license: L-JTPV-KYG8TF
     use: NonProduction
   queueManager:
-    name: NHA
+    name: NHA1
     resources:
       limits:
         cpu: 1
