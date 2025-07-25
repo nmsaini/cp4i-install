@@ -1,3 +1,18 @@
+apiVersion: v1
+data:
+  configuration: eyJhdXRoVHlwZSI6IkJBU0lDX0FVVEgiLCJjcmVkZW50aWFscyI6eyJ1c2VybmFtZSI6IiIsInBhc3N3b3JkIjoiIn19Cg==
+kind: Secret
+metadata:
+  name: github-ivt-secret
+---
+apiVersion: appconnect.ibm.com/v1beta1
+kind: Configuration
+metadata:
+  name: github-ivt
+spec:
+  secretName: github-ivt-secret
+  type: barauth
+---
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationRuntime
 metadata:
