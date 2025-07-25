@@ -42,3 +42,4 @@ spec:
     enabled: true
   replicas: 1
   version: '13.0'
+# curl -s $(oc get routes ivt104-ir-http -o jsonpath="{.spec.host}")/IVT;echo
