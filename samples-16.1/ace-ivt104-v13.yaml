@@ -16,7 +16,7 @@ spec:
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationRuntime
 metadata:
-  name: ir-01-quickstart
+  name: ivt104-ir
   labels:
     backup.appconnect.ibm.com/component: integrationruntime
   namespace: cp4i
