@@ -16,7 +16,7 @@ spec:
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationRuntime
 metadata:
-  name: ivt104-ir
+  name: ace-ivt104
   labels:
     backup.appconnect.ibm.com/component: integrationruntime
   namespace: cp4i
