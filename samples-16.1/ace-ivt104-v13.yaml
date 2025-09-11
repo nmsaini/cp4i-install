@@ -19,7 +19,6 @@ metadata:
   name: ace-ivt104
   labels:
     backup.appconnect.ibm.com/component: integrationruntime
-  namespace: cp4i
 spec:
   license:
     accept: true
